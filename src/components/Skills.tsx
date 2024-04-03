@@ -40,13 +40,19 @@ const Skills: FunctionComponent = () => {
       </div>
       <div className={styles.skillsChild}>
         <div className={styles.skillsGroup}>
-          <Skills1 iconJavscript="/iconjavscript.svg" javascript="javascript" />
+          <Skills1
+            iconJavscript="/iconjavscript.svg"
+            javascript="javascript"
+            propColorRenamed="white"
+            showJavascript
+          />
           <Skills1
             iconJavscript="/icongit.svg"
             javascript="Git"
             propBackgroundColor="#fff"
             propOverflow="hidden"
-            propColor="#000"
+            propColorRenamed="#000"
+            showJavascript
           />
         </div>
       </div>
@@ -70,14 +76,16 @@ const Skills: FunctionComponent = () => {
             javascript="Nest.Js"
             propBackgroundColor="#fff"
             propOverflow="hidden"
-            propColor="#000"
+            propColorRenamed="#000"
+            showJavascript
           />
           <Skills1
             iconJavscript="/iconsocket.svg"
             javascript="Socket.io"
             propBackgroundColor="#fff"
             propOverflow="hidden"
-            propColor="#000"
+            propColorRenamed="#000"
+            showJavascript
           />
         </div>
       </div>
@@ -88,14 +96,16 @@ const Skills: FunctionComponent = () => {
             javascript="Storybook"
             propBackgroundColor="#fff"
             propOverflow="hidden"
-            propColor="#000"
+            propColorRenamed="#000"
+            showJavascript
           />
           <Skills1
             iconJavscript="/iconsass.svg"
             javascript="Sass/scss"
             propBackgroundColor="#fff"
             propOverflow="hidden"
-            propColor="#000"
+            propColorRenamed="#000"
+            showJavascript
           />
         </div>
       </div>
