@@ -1,0 +1,100 @@
+.my,
+.testimonial1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 56px;
+  font-family: inherit;
+}
+.my {
+  font-weight: 400;
+  display: inline-block;
+  min-width: 70px;
+}
+.testimonial1 {
+  font-weight: 800;
+}
+.myParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  max-width: 100%;
+}
+.row,
+.testimonial,
+.testimonialInner {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.testimonialInner {
+  width: 1216px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.row,
+.testimonial {
+  overflow: hidden;
+}
+.row {
+  width: 1216px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-21xl) var(--padding-5xl);
+  gap: var(--gap-10xl);
+  text-align: center;
+  font-size: var(--heading-h6-semibold-size);
+  color: var(--primary-neutral);
+}
+.testimonial {
+  align-self: stretch;
+  background-color: var(--primary-white);
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-61xl) 0 var(--padding-41xl);
+  gap: var(--gap-21xl);
+  text-align: left;
+  font-size: var(--displaytext-extra-bold-size);
+  color: var(--primary-black);
+  font-family: var(--heading-h6-semibold);
+}
+@media screen and (max-width: 750px) {
+  .my,
+  .testimonial1 {
+    font-size: var(--font-size-19xl);
+    line-height: 45px;
+  }
+  .testimonial {
+    padding-top: var(--padding-33xl);
+    padding-bottom: var(--padding-20xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 675px) {
+  .row {
+    padding-top: var(--padding-7xl);
+    padding-bottom: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+  .testimonial {
+    gap: 20px 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .my,
+  .testimonial1 {
+    font-size: var(--font-size-10xl);
+    line-height: 34px;
+  }
+  .myParent {
+    flex-wrap: wrap;
+  }
+}

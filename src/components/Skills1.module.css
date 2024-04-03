@@ -1,0 +1,44 @@
+.iconJavscript {
+  height: 56px;
+  width: 56px;
+  position: relative;
+}
+.iconJavscriptWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-22xl);
+}
+.javascript {
+  width: 138px;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 24px;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.skills {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-9xs);
+  background-color: var(--primary-black);
+  border: 2px solid var(--primary-black);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-18xl) var(--padding-3xl);
+  gap: var(--gap-13xl);
+  text-align: center;
+  font-size: var(--heading-h5-semibold-size);
+  color: var(--primary-white);
+  font-family: var(--heading-h6-semibold);
+}
+@media screen and (max-width: 450px) {
+  .javascript {
+    font-size: var(--heading-h6-semibold-size);
+    line-height: 19px;
+  }
+}

@@ -1,0 +1,130 @@
+.circlesIcon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.frameChild {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--primary-black);
+}
+.vectorIcon {
+  height: 31%;
+  width: 43%;
+  position: absolute;
+  margin: 0 !important;
+  top: 33.33%;
+  right: 27%;
+  bottom: 35.67%;
+  left: 30%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.ellipseParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+}
+.circlesParent,
+.evrenShahDesigner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.circlesParent {
+  width: 96px;
+  justify-content: flex-end;
+  padding: var(--padding-47xl) 0 0;
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-3xs);
+}
+.evrenShahDesigner {
+  align-self: stretch;
+  justify-content: center;
+}
+.iRecentlyHad {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+}
+.designerName {
+  height: 2px;
+  width: 120px;
+  position: relative;
+  background-color: var(--primary-black);
+}
+.designerNameWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.designer,
+.evrenShah {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+.evrenShah {
+  font-size: var(--heading-h5-semibold-size);
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.designer {
+  line-height: 20px;
+  color: var(--zinc-500);
+}
+.testimonial {
+  flex: 1;
+  border-radius: var(--br-xl);
+  background-color: var(--primary-white);
+  box-shadow: 0 6px 8px -6px rgba(24, 39, 75, 0.12),
+    0 8px 16px -6px rgba(24, 39, 75, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-21xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  min-width: 277px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--heading-h6-semibold-size);
+  color: var(--primary-neutral);
+  font-family: var(--heading-h6-semibold);
+}
+@media screen and (max-width: 450px) {
+  .evrenShah {
+    font-size: var(--heading-h6-semibold-size);
+    line-height: 19px;
+  }
+  .testimonial {
+    padding-top: var(--padding-7xl);
+    padding-bottom: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+}
