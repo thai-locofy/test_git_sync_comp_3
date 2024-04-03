@@ -4,11 +4,12 @@ import styles from "./Skills1.module.css";
 export type Skills1Type = {
   iconJavscript?: string;
   javascript?: string;
+  showJavascript?: boolean;
 
   /** Style props */
   propBackgroundColor?: CSSProperties["backgroundColor"];
   propOverflow?: CSSProperties["overflow"];
-  propColor?: CSSProperties["color"];
+  propColorRenamed?: CSSProperties["color"];
 };
 
 const Skills1: FunctionComponent<Skills1Type> = ({
@@ -16,7 +17,8 @@ const Skills1: FunctionComponent<Skills1Type> = ({
   javascript,
   propBackgroundColor,
   propOverflow,
-  propColor,
+  propColorRenamed,
+  showJavascript = true,
 }) => {
   const skillsStyle: CSSProperties = useMemo(() => {
     return {
@@ -32,9 +34,9 @@ const Skills1: FunctionComponent<Skills1Type> = ({
 
   const javascriptStyle: CSSProperties = useMemo(() => {
     return {
-      color: propColor,
+      color: propColorRenamed,
     };
-  }, [propColor]);
+  }, [propColorRenamed]);
 
   return (
     <div className={styles.skills} style={skillsStyle}>
@@ -47,9 +49,11 @@ const Skills1: FunctionComponent<Skills1Type> = ({
           style={iconJavscriptStyle}
         />
       </div>
-      <b className={styles.javascript} style={javascriptStyle}>
-        {javascript}
-      </b>
+      {showJavascript && (
+        <b className={styles.javascript} style={javascriptStyle}>
+          {javascript}
+        </b>
+      )}
     </div>
   );
 };
