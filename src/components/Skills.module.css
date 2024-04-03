@@ -78,31 +78,32 @@
   z-index: 1;
   margin-left: -138px;
 }
-.nestjsParent,
-.skills2,
-.skillsParent {
+.nestjsParent {
+  width: 138px;
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.nestjsParent {
-  width: 138px;
-  flex-direction: row;
-}
-.skills2,
-.skillsParent {
-  align-self: stretch;
-  flex: 1;
-  flex-direction: column;
-}
 .skills2 {
+  flex: 1;
   border-radius: var(--br-9xs);
   background-color: var(--primary-white);
   border: 2px solid var(--primary-black);
   padding: var(--padding-18xl) var(--padding-3xl);
   gap: var(--gap-13xl);
 }
+.skills2,
+.skillsInner,
 .skillsParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.skillsParent {
+  flex: 1;
   gap: var(--gap-21xl);
 }
 .skillsInner {
@@ -111,9 +112,38 @@
   padding: var(--padding-77xl) var(--padding-mid) 0 0;
   box-sizing: border-box;
 }
+.iconJavscript {
+  height: 56px;
+  width: 56px;
+  position: relative;
+}
+.iconJavscriptWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-22xl);
+}
+.javascript1 {
+  width: 138px;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 24px;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.skills3 {
+  flex: 0.7796;
+  border-radius: var(--br-9xs);
+  background-color: var(--primary-black);
+  border: 2px solid var(--primary-black);
+  padding: var(--padding-18xl) var(--padding-3xl);
+  gap: var(--gap-13xl);
+}
+.skills3,
 .skillsChild,
-.skillsGroup,
-.skillsInner {
+.skillsGroup {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -132,7 +162,7 @@
   color: var(--primary-white);
 }
 .my,
-.skills3 {
+.skills4 {
   margin: 0;
   position: relative;
   font-size: inherit;
@@ -145,10 +175,9 @@
   display: inline-block;
   min-width: 70px;
 }
-.skills3 {
+.skills4 {
   font-weight: 800;
 }
-.frameGroup,
 .myParent {
   display: flex;
   flex-direction: row;
@@ -157,20 +186,112 @@
   gap: var(--gap-base);
 }
 .frameGroup {
-  align-self: stretch;
   width: 220px;
   flex-shrink: 0;
-  flex-direction: column;
   gap: var(--gap-21xl);
   text-align: left;
   font-size: var(--displaytext-extra-bold-size);
+}
+.frameDiv,
+.frameGroup,
+.skillsContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .skillsContainer {
   flex: 1;
   gap: var(--gap-21xl);
 }
-.frameDiv,
-.skillsContainer,
+.frameDiv {
+  width: 203px;
+  flex-shrink: 0;
+  padding: var(--padding-77xl) var(--padding-mid) 0 0;
+  box-sizing: border-box;
+}
+.iconStorybook {
+  height: 56px;
+  width: 56px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.iconStorybookWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-23xl) 0 var(--padding-22xl);
+}
+.javascript2,
+.nestjs2 {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.javascript2 {
+  align-self: stretch;
+}
+.nestjs2 {
+  flex: 1;
+}
+.javascriptParent,
+.nestjsWrapper,
+.skills5 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.nestjsWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-12xs);
+}
+.javascriptParent,
+.skills5 {
+  flex-direction: column;
+}
+.javascriptParent {
+  width: 139px;
+  gap: var(--gap-smi);
+}
+.skills5 {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-9xs);
+  background-color: var(--primary-white);
+  border: 2px solid var(--primary-black);
+  padding: var(--padding-18xl) var(--padding-2xl) 0 var(--padding-3xl);
+  gap: var(--gap-13xl);
+}
+.iconSass {
+  height: 56px;
+  width: 56px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.iconSassWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-22xl);
+}
+.javascript3 {
+  width: 138px;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 24px;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.skills6,
 .skillsParent1 {
   align-self: stretch;
   display: flex;
@@ -178,11 +299,13 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frameDiv {
-  width: 203px;
-  flex-shrink: 0;
-  padding: var(--padding-77xl) var(--padding-mid) 0 0;
-  box-sizing: border-box;
+.skills6 {
+  flex: 0.7796;
+  border-radius: var(--br-9xs);
+  background-color: var(--primary-white);
+  border: 2px solid var(--primary-black);
+  padding: var(--padding-18xl) var(--padding-3xl);
+  gap: var(--gap-13xl);
 }
 .skillsParent1 {
   flex: 1;
@@ -219,7 +342,7 @@
 }
 @media screen and (max-width: 750px) {
   .my,
-  .skills3 {
+  .skills4 {
     font-size: var(--font-size-19xl);
     line-height: 45px;
   }
@@ -239,14 +362,21 @@
 }
 @media screen and (max-width: 450px) {
   .javascript,
+  .javascript1,
   .nestjs,
   .nestjs1 {
     font-size: var(--heading-h6-semibold-size);
     line-height: 19px;
   }
   .my,
-  .skills3 {
+  .skills4 {
     font-size: var(--font-size-10xl);
     line-height: 34px;
+  }
+  .javascript2,
+  .javascript3,
+  .nestjs2 {
+    font-size: var(--heading-h6-semibold-size);
+    line-height: 19px;
   }
 }

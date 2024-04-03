@@ -2,54 +2,37 @@ import { FunctionComponent, useMemo, type CSSProperties } from "react";
 import styles from "./Skills1.module.css";
 
 export type Skills1Type = {
+  showJavascript?: boolean;
   iconJavscript?: string;
   javascript?: string;
 
   /** Style props */
-  propBackgroundColor?: CSSProperties["backgroundColor"];
-  propOverflow?: CSSProperties["overflow"];
-  propColor?: CSSProperties["color"];
+  nestJsColor?: CSSProperties["color"];
 };
 
 const Skills1: FunctionComponent<Skills1Type> = ({
+  showJavascript = true,
   iconJavscript,
   javascript,
-  propBackgroundColor,
-  propOverflow,
-  propColor,
+  nestJsColor,
 }) => {
-  const skillsStyle: CSSProperties = useMemo(() => {
+  const nestJsStyle: CSSProperties = useMemo(() => {
     return {
-      backgroundColor: propBackgroundColor,
+      color: nestJsColor,
     };
-  }, [propBackgroundColor]);
-
-  const iconJavscriptStyle: CSSProperties = useMemo(() => {
-    return {
-      overflow: propOverflow,
-    };
-  }, [propOverflow]);
-
-  const javascriptStyle: CSSProperties = useMemo(() => {
-    return {
-      color: propColor,
-    };
-  }, [propColor]);
+  }, [nestJsColor]);
 
   return (
-    <div className={styles.skills} style={skillsStyle}>
-      <div className={styles.iconJavscriptWrapper}>
-        <img
-          className={styles.iconJavscript}
-          loading="lazy"
-          alt=""
-          src={iconJavscript}
-          style={iconJavscriptStyle}
-        />
+    <div className={styles.skills}>
+      <div className={styles.iconNestWrapper}>
+        <img className={styles.iconNest} alt="" src={iconJavscript} />
       </div>
-      <b className={styles.javascript} style={javascriptStyle}>
-        {javascript}
-      </b>
+      <div className={styles.javascriptParent}>
+        {showJavascript && <b className={styles.javascript}>{javascript}</b>}
+        <b className={styles.nestjs} style={nestJsStyle}>
+          Nest.Js
+        </b>
+      </div>
     </div>
   );
 };

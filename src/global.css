@@ -19,6 +19,8 @@ body {
   --zinc-500: #71717a;
   --primary-neutral: #404040;
   --primary-black: #000;
+  --color-mediumblue: #2000e7;
+  --color-red: #ff0000;
 
   /* Gaps */
   --gap-21xl: 40px;
@@ -28,6 +30,7 @@ body {
   --gap-3xs: 10px;
   --gap-base: 16px;
   --gap-13xl: 32px;
+  --gap-smi: 13px;
 
   /* Paddings */
   --padding-61xl: 80px;
@@ -44,6 +47,9 @@ body {
   --padding-18xl: 37px;
   --padding-3xl: 22px;
   --padding-22xl: 41px;
+  --padding-2xl: 21px;
+  --padding-12xs: 1px;
+  --padding-23xl: 42px;
   --padding-mid: 17px;
 
   /* Border radiuses */
